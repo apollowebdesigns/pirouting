@@ -10,4 +10,4 @@ def get_data():
     return requests.get(ipaddress).content
 
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port=8888, debug=True)
+   app.run(host='0.0.0.0', port=8899, debug=True)
