@@ -9,10 +9,10 @@ ipaddress = 'http://192.168.1.69:9876'
 def get_data():
     return requests.get(ipaddress).content
 
-fowards = '/hits/forwards'
-@app.route('/fowards', methods=['GET'])
+forwards = '/hits/forwards'
+@app.route('/forwards', methods=['GET'])
 def move_forwards():
-    return requests.get(ipaddress + fowards).content
+    return requests.get(ipaddress + forwards).content
 
 motor = '/hits/motor'
 @app.route('/motor', methods=['GET'])
