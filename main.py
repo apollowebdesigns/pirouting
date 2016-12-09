@@ -14,9 +14,9 @@ fowards = '/forwards'
 def move_forwards():
     return requests.get(ipaddress + fowards).content
 
-motor = '/hits/motor'
+motor = '/motor'
 @app.route(motor, methods=['GET'])
-def move_forwards():
+def motor_move():
     return requests.get(ipaddress + motor).content
 
 if __name__ == "__main__":
