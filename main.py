@@ -9,7 +9,7 @@ ipaddress = 'http://192.168.1.69:9876'
 def get_data():
     return requests.get(ipaddress).content
 
-fowards = '/forwards'
+fowards = '/hits/forwards'
 @app.route(fowards, methods=['GET'])
 def move_forwards():
     return requests.get(ipaddress + fowards).content
