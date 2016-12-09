@@ -10,12 +10,12 @@ def get_data():
     return requests.get(ipaddress).content
 
 fowards = '/hits/forwards'
-@app.route('fowards', methods=['GET'])
+@app.route('/fowards', methods=['GET'])
 def move_forwards():
     return requests.get(ipaddress + fowards).content
 
 motor = '/hits/motor'
-@app.route('motor', methods=['GET'])
+@app.route('/motor', methods=['GET'])
 def motor_move():
     return requests.get(ipaddress + motor).content
 
