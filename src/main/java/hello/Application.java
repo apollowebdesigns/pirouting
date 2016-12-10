@@ -31,4 +31,6 @@ public class Application {
 			log.info(quote.toString());
 		};
 	}
+
+	SpringApplication.run(Application.class, args);
 }
