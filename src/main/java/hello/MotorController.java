@@ -1,5 +1,6 @@
 package hello;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
@@ -8,6 +9,8 @@ import org.springframework.web.client.RestTemplate;
  * Created by andrewevans on 13/12/2016.
  */
 public class MotorController {
+
+    @CrossOrigin
     @RequestMapping("/motor")
     public String greeting(@RequestParam(value="name", defaultValue="World") String name) {
 
