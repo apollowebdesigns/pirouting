@@ -18,8 +18,6 @@ public class MotorController {
 
         String response = restTemplate.getForObject("http://192.168.1.69:9876/hits/motor", String.class);
 
-        //String response = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", String.class);
-
         return response;
     }
 }
